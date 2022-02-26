@@ -1,0 +1,820 @@
+
+.slick-slide {
+    outline: none;
+}
+
+
+#mega {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 1);
+    /*display: none;*/
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+#mega.on {
+    transform: translateX(0);
+}
+
+#mega > .left {
+    position: absolute;
+    left: 240px;
+    top: 140px;
+    width: 500px;
+    height: 720px;
+}
+
+#mega .left .menu {
+    margin-bottom: 45px;
+    opacity: 0.3;
+    position: relative;
+}
+
+#mega .left .menu > div {
+    display: inline-block;
+    transition: all .5s;
+    position: relative;
+}
+
+
+#mega .left .menu > div:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 1s
+}
+
+
+#mega .left .menu > div:hover:after {
+    width: 110%;
+}
+
+#mega .left > div:hover {
+    opacity: 1;
+}
+
+#mega .right {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    width: 500px;
+    height: 720px;
+}
+
+#mega .right > .etc1 {
+    position: absolute;
+    right: 570px;
+    top: 280px;
+}
+
+#mega .right > .etc2 {
+    position: absolute;
+    right: 284px;
+    bottom: -60px;
+}
+
+#mega > div {
+    cursor: pointer;
+}
+
+
+#header {
+    width: 88px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999999;
+
+}
+
+#header > .open {
+    width: 78px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#header > .open .inner {
+    width: 35px;
+    height: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#header > .open .inner > div {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transition: all 1s;
+}
+
+#header > .open .inner > div:nth-child(1) {
+    transform-origin: left top;
+}
+
+#header > .open .inner > div:nth-child(2) {
+    transform-origin: right bottom;
+}
+
+#header > .open.on .inner > div:nth-child(1) {
+    transform: rotate(-45deg) translateY(13px);
+}
+
+#header > .open.on .inner > div:nth-child(2) {
+    transform: rotate(45deg) translateY(2px);
+}
+
+
+#header > .bottom {
+    width: 36px;
+    height: 132px;
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+}
+
+
+#container .main {
+    width: 12266px; /* 컨텐츠 박스 5개 X 1920(가로사이즈) */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#section01 {
+    width: 1226px;
+}
+
+#section01 .main1 {
+    position: absolute;
+    left: 88px;
+    top: 0;
+}
+
+#section01 .right {
+    width: 639px;
+    height: 176px;
+    position: absolute;
+    left: 575px;
+    bottom: 48px;
+}
+
+
+#section01 .right > .main3 {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    animation: arrow 1s infinite alternate;
+}
+
+@keyframes arrow {
+
+    to {
+        transform: translateX(20px);
+    }
+}
+
+
+#section02 {
+    width: 814px;
+}
+
+
+#section02 .box {
+    width: 562px;
+    height: 185px;
+    position: absolute;
+    left: 110px;
+    top: 0;
+}
+
+
+#section02 .palette {
+    position: absolute;
+    left: 0;
+    top: -87px;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section02.on .palette {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section02 .text {
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+
+
+#section02 .box1 {
+    width: 264px;
+    height: 712px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+
+#section02 .palette2 {
+    position: absolute;
+    right: 17px;
+    bottom: 0;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+#section02.on .palette2 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+#section02 .box2 {
+    width: 480px;
+    height: 522px;
+    position: absolute;
+    left: 110px;
+    top: 350px;
+}
+
+#section02 .box2 > .gentle {
+    position: absolute;
+    left: -30px;
+    top: -100px;
+}
+
+#section02 .box2 > .karma1 {
+    position: absolute;
+    left: 50px;
+    bottom: 220px;
+}
+
+
+#section03 {
+    width: 1442px;
+}
+
+#section03 .box {
+    width: 665px;
+    height: 382px;
+    position: absolute;
+    left: 20px;
+    top: 90px;
+}
+
+#section03 .box > .round {
+    position: absolute;
+    left: 290px;
+    top: -120px;
+    animation: round 4s infinite linear;
+}
+
+@keyframes round {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+#section03 .box1 {
+    width: 604px;
+    height: 439px;
+    position: absolute;
+    left: 120px;
+    bottom: 190px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+#section03.on .box1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+#section03 .box1 > .text {
+    position: absolute;
+    left: 90px;
+    bottom: 40px;
+}
+
+#section03 .box2 {
+    width: 708px;
+    height: 883px;
+    position: absolute;
+    right: 120px;
+    top: 100px;
+}
+
+#section03 .palette {
+    position: absolute;
+    left: 330px;
+    top: -65px;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section03.on .palette {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section03 .box2 > .model {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+#section03 .box2 > .text {
+    position: absolute;
+    left: 205px;
+    top: 292px;
+    z-index: 999;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 1s 0.4s;
+}
+
+#section03.on .text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section03 .box2 > .product {
+    position: absolute;
+    left: 200px;
+    bottom: 115px;
+}
+
+
+#section04 {
+    width: 2063px;
+}
+
+#section04 .box {
+    width: 1019px;
+    position: relative;
+}
+
+#section04 .box > .text {
+    position: absolute;
+    left: 400px;
+    bottom: 80px;
+}
+
+#section04 .box1 {
+    width: 821px;
+    height: 841px;
+    position: absolute;
+    left: 700px;
+    top: 170px;
+}
+
+#section04 .box1 > .product {
+    position: absolute;
+    left: 10px;
+    top: 90px;
+}
+
+#section04 .box1 > .text {
+    position: absolute;
+    right: 280px;
+    top: 30px;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section04.on .box1 > .text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section04 .box1 > .product1 {
+    position: absolute;
+    right: 60px;
+    bottom: 110px;
+}
+
+#section04 .box2 {
+    width: 770px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#section04 .box2 > .bg {
+    position: absolute;
+    left: -20px;
+    top: 60px;
+    transform: rotate(-20deg);
+}
+
+
+#section04 .box2 > .model {
+    position: absolute;
+    right: 250px;
+    top: 250px;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+#section04.on .box2 > .model {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+#section04 .box2 > .text {
+    position: absolute;
+    right: 40px;
+    top: 120px;
+}
+
+#section04 .box2 > .palette {
+    position: absolute;
+    left: 440px;
+    bottom: 240px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section04.on .box2 > .palette {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section04 .box2 > .palette1 {
+    position: absolute;
+    left: 270px;
+    bottom: -70px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section04.on .box2 > .palette1 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+
+#section05 {
+    width: 1524px;
+}
+
+#section05 .box {
+    width: 628px;
+    height: 766px;
+    position: absolute;
+    left: -93px;
+    top: 150px;
+}
+
+#section05 .box > .text {
+    position: absolute;
+    left: 170px;
+    top: 160px;
+    transform: translateX(70px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section05.on .box > .text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section05 .box1 {
+    width: 914px;
+    height: 811px;
+    position: absolute;
+    right: -15px;
+    top: 135px;
+}
+
+
+#section05 .box1 > .product {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section05.on .box1 > .product {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section05 .box1 > .palette {
+    position: absolute;
+    right: 80px;
+    top: 295px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s 1.5s ;
+}
+
+#section05.on .box1 > .palette {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section06 {
+    width: 2220px;
+}
+
+#section06 .box {
+    width: 770px;
+    height: 859px;
+    position: absolute;
+    right: 60px;
+    top: 50px;
+}
+
+
+#section06 .box > .model {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-60px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+#section06.on .box > .model {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section06 .box > .text {
+    position: absolute;
+    left: 60px;
+    top: 40px;
+}
+
+
+#section06 .box > .text1 {
+    position: absolute;
+    left: 60px;
+    bottom: 270px;
+}
+
+
+#section06 .box > .product {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    transform: translateX(60px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section06.on .box > .product {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section07 {
+    width: 2052px;
+}
+
+#section07 .box {
+    width: 825px;
+    height: 782px;
+    position: absolute;
+    left: 110px;
+    top: 130px;
+}
+
+#section07 .box > .model{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#section07 .box > .text{
+    position: absolute;
+    left: 313px;
+    top: 80px;
+    transform: translateX(-40px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section07.on .box > .text{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+#section07 .box > .text1{
+    position: absolute;
+    left: 380px;
+    top: 150px;
+    transform: translateX(-60px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section07.on .box > .text1{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1s 1s;
+}
+
+
+#section07 .box > .palette{
+    position: absolute;
+    left: 10px;
+    bottom: 75px;
+}
+
+#section07 .box > .product{
+    position: absolute;
+    right: 130px;
+    bottom: 150px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section07.on .box > .product{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+
+
+
+#section07 .box1 {
+    width: 1182px;
+    height: 931px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#section07 .box1 > .model {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    z-index: 999;
+}
+
+#section07 .box1 > .product {
+    position: absolute;
+    right: 307px;
+    bottom: 140px;
+    z-index: 9999;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s 1.5s;
+}
+
+#section07.on .box1 > .product {
+    z-index: 9999;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+#section07 .box1 > .text {
+    position: absolute;
+    right: 410px;
+    bottom: 450px;
+}
+
+#section07 .box1 > .text1 {
+    position: absolute;
+    right: 270px;
+    bottom: 370px;
+}
+
+#section07 .box1 > .round {
+    position: absolute;
+    right: 450px;
+    top: 25px;
+    animation: round 4s infinite linear;
+}
+
+@keyframes round {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+
+#section07 .box1 > .palette {
+    position: absolute;
+    right: 350px;
+    bottom: -90px;
+}
+
+
+#section07 .box1 > .palette1 {
+    position: absolute;
+    right: -40px;
+    top: 300px;
+    transform: translateX(80px);
+    opacity: 0;
+    transition: all 1s 1.2s;
+}
+
+#section07.on .box1 > .palette1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section07 .box1 > .button {
+    position: absolute;
+    right: 80px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+
+#section08 {
+    width: 925px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

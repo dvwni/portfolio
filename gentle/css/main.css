@@ -1,0 +1,395 @@
+
+#container .main {
+    width: 55680px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/** Scene01 **/
+#section01 {
+    width: 1920px;
+    background: #000;
+}
+
+#section01 .tag {
+    position: absolute;
+    left: 147px;
+    bottom: 260px;
+    cursor: pointer;
+}
+
+
+/** Scene02 **/
+#section02 {
+    width: 1920px;
+    background: #fff;
+}
+
+#section02 .over {
+    position: absolute;
+    left: 160px;
+    top: 230px;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section02.on .over {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/** Scene03 **/
+#section03 {
+    width: 1920px;
+    background: #000;
+}
+
+#section03 .des {
+    position: absolute;
+    left: 143px;
+    top: 410px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section03.on .des {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/** Scene04 **/
+#section04 {
+    width: 1920px;
+    background: #fff;
+}
+
+
+/** Scene05 **/
+#section05 {
+    width: 1920px;
+}
+
+
+#section05 .des {
+    position: absolute;
+    right: 220px;
+    top: 390px;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section05.on .des {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/** Scene06 **/
+#section06 {
+    width: 1920px;
+    background: #fff;
+}
+
+
+/** Scene07 **/
+#section07 {
+    width: 1920px;
+}
+
+
+/** Scene08 **/
+#section08 {
+    width: 1920px;
+}
+
+#section08 .box {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+}
+
+#section08 .box > .top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#section08 .box > .back {
+    position: absolute;
+    left: 104px;
+    top: 155px;
+    z-index: 0;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section08.on .box > .back {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/** Scene09 **/
+#section09 {
+    width: 1920px;
+}
+
+/** Scene10 **/
+#section10 {
+    width: 1920px;
+}
+
+/** Scene11 **/
+#section11 {
+    width: 1920px;
+}
+
+/** Scene12 **/
+#section12 {
+    width: 1920px;
+}
+
+/** Scene13 **/
+#section13 {
+    width: 1920px;
+}
+
+/** Scene14 **/
+#section14 {
+    width: 1920px;
+}
+
+/** Scene15 **/
+#section15 {
+    width: 1920px;
+}
+
+/** Scene16 **/
+#section16 {
+    width: 1920px;
+}
+
+/** Scene17 **/
+#section17 {
+    width: 1920px;
+    background: #d7d7d7;
+}
+
+#section17 .box {
+    width: 360px;
+    height: 600px;
+    position: absolute;
+    right: 170px;
+    top: 240px;
+}
+
+#section17 .box > div:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section17.on .box > div:nth-child(1) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section17 .box > div:nth-child(2) {
+    position: absolute;
+    left: 155px;
+    top: 90px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s 0.5s;
+}
+
+#section17.on .box > div:nth-child(2) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/** Scene18 **/
+#section18 {
+    width: 1920px;
+}
+
+#section18 .right {
+    position: absolute;
+    right: 145px;
+    bottom: 85px;
+    animation: arrow 1s infinite alternate;
+}
+
+@keyframes arrow {
+
+    to {
+        transform: translateX(20px);
+    }
+}
+
+/** Scene19 **/
+#section19 {
+    width: 1920px;
+}
+
+#section19 .des {
+    position: absolute;
+    right: 170px;
+    top: 110px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section19.on .des {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/** Scene20 **/
+#section20 {
+    width: 1920px;
+}
+
+#section20 .des {
+    position: absolute;
+    left: 160px;
+    top: 410px;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section20.on .des {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/** Scene21 **/
+#section21 {
+    width: 1920px;
+}
+
+/** Scene22 **/
+#section22 {
+    width: 1920px;
+}
+
+/** Scene23 **/
+#section23 {
+    width: 1920px;
+}
+
+/** Scene24 **/
+#section24 {
+    width: 1920px;
+}
+
+/** Scene25 **/
+#section25 {
+    width: 1920px;
+}
+
+/** Scene26 **/
+#section26 {
+    width: 1920px;
+}
+
+/** Scene27 **/
+#section27 {
+    width: 1920px;
+}
+
+/** Scene28 **/
+#section28 {
+    width: 1920px;
+}
+
+/** Scene29 **/
+#section29 {
+    width: 1920px;
+}
+
+#section29 .box{
+    position: absolute;
+    right: -60px;
+    top: -110px;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section29.on .box{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section29 .button {
+    position: absolute;
+    right: 150px;
+    bottom: 110px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

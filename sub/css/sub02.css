@@ -1,0 +1,401 @@
+/** Scene01 **/
+
+
+.slick-slide {
+    outline: none;
+}
+
+
+#mega {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999999;
+    background: rgba(0, 0, 0, 1);
+    /*display: none;*/
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+#mega.on {
+    transform: translateX(0);
+}
+
+#mega > .left {
+    position: absolute;
+    left: 240px;
+    top: 140px;
+    width: 500px;
+    height: 720px;
+}
+
+#mega .left .menu {
+    margin-bottom: 45px;
+    opacity: 0.3;
+    position: relative;
+}
+
+#mega .left .menu > div {
+    display: inline-block;
+    transition: all .5s;
+    position: relative;
+}
+
+
+#mega .left .menu > div:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 1s
+}
+
+
+#mega .left .menu > div:hover:after {
+    width: 110%;
+}
+
+#mega .left > div:hover {
+    opacity: 1;
+}
+
+#mega .right {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    width: 500px;
+    height: 720px;
+}
+
+#mega .right > .etc1 {
+    position: absolute;
+    right: 570px;
+    top: 280px;
+}
+
+#mega .right > .etc2 {
+    position: absolute;
+    right: 284px;
+    bottom: -60px;
+}
+
+#mega > div {
+    cursor: pointer;
+}
+
+
+#header {
+    width: 88px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999;
+}
+
+#header > .open {
+    width: 78px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#header > .open .inner {
+    width: 35px;
+    height: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#header > .open .inner > div {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transition: all 1s;
+}
+
+#header > .open .inner > div:nth-child(1) {
+    transform-origin: left top;
+}
+
+#header > .open .inner > div:nth-child(2) {
+    transform-origin: right bottom;
+}
+
+#header > .open.on .inner > div:nth-child(1) {
+    transform: rotate(-45deg) translateY(13px);
+}
+
+#header > .open.on .inner > div:nth-child(2) {
+    transform: rotate(45deg) translateY(2px);
+}
+
+
+#header > .bottom {
+    width: 36px;
+    height: 132px;
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+}
+
+
+#container .main {
+    width: 2846px; /* ������ �ڽ� 5�� X 1920(���λ�����) */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#section01 {
+    width: 1258px;
+}
+
+#section01 .box {
+    position: relative;
+}
+
+#section01 .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -180px 0 0 -196px;
+    cursor: pointer;
+}
+
+
+/** Scene02 **/
+#section02 {
+    width: 662px;
+    background: white;
+}
+
+
+#section02 .box {
+    width: 480px;
+    height: 257px;
+    position: relative;
+    margin: 160px 0 0 90px;
+}
+
+
+#section02 .box > .store {
+    position: absolute;
+    left: 4px;
+    top: -80px;
+}
+
+#section02 .box > .search {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#section02 .box > .search1 {
+    position: absolute;
+    right: -2px;
+    top: 5px;
+}
+
+#section02 .box > .stokist {
+    position: absolute;
+    left: 0;
+    top: 66px;
+}
+
+
+#section02 .box > .stokist1 {
+    position: absolute;
+    right: 0;
+    top: 69px;
+}
+
+#section02 .box > .stokist1 {
+    position: absolute;
+    right: -2px;
+    top: 69px;
+}
+
+
+#section02 .box > .check {
+    position: absolute;
+    left: 1px;
+    bottom: 80px;
+    border-bottom: 1px solid #d3d3d3;
+    box-sizing: border-box;
+}
+
+#section02 .boxing {
+    width: 480px;
+    height: 533px;
+    position: absolute;
+    left: 90px;
+    bottom: 64px;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.scrollbar{
+    width: 4px;
+    height: 637px;
+    background: rgb(179, 179, 179);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.scrollbar .bar{
+    width: 100%;
+    height: 100px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+#section02 .boxing > div:hover {
+    /*width: 445px;*/
+    /*height: 49px;*/
+    background: black;
+
+}
+
+
+#section02 .boxing > div:hover img {
+    filter: invert(100%);
+}
+
+
+#section02 .boxing > div {
+    cursor: pointer;
+    margin-bottom: 11px;
+}
+
+
+/** Scene03 **/
+#section03 {
+    width: 926px;
+    background: black;
+}
+
+
+.pop1 {
+    width: 542px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    z-index: -1;
+    opacity: 0;
+    background: transparent;
+    transition: all .5s;
+}
+
+.pop1.on {
+    opacity: 1;
+    z-index: 999999;
+}
+
+.pop1 .description {
+    /*width: 542px;*/
+    /*height: 100vh;*/
+    /*position: absolute;*/
+    /*right: 662px;*/
+    /*top: 0;*/
+
+}
+
+
+.pop1 .description > .close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+}
+
+
+.pop1 .description > .image {
+    position: absolute;
+    right: 65px;
+    top: 110px;
+}
+
+#img_slider {
+    width: 413px;
+    height: 279px;
+
+}
+
+.pop1 .description > .boxes {
+    width: 490px;
+    height: 21px;
+    position: absolute;
+    left: 25px;
+    top: 240px;
+}
+
+.pop1 .description .boxes > .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.pop1 .description .boxes > .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.pop1 .description .des {
+    position: absolute;
+    left: 59px;
+    bottom: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,303 @@
+
+#container .main {
+    width: 19200px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/** Scene01 **/
+#section01 {
+    width: 1920px;
+}
+
+#section01 .title {
+    position: absolute;
+    left: 180px;
+    top: 370px;
+}
+
+#section01 .title1 {
+    margin-bottom: 23px;
+}
+
+
+
+#section01 .title2 {
+    margin-left: 9px;
+}
+
+
+/** Scene02 **/
+#section02 {
+    width: 1920px;
+}
+
+#section02 .des {
+    position: absolute;
+    left: 200px;
+    top: 420px;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section02.on .des {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+/** Scene03 **/
+#section03 {
+    width: 1920px;
+    background: #eaeaea;
+}
+
+#section03 .video_container {
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    left: 80px;
+    top: 140px;
+}
+
+#section03 .video_container .frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#section03 .video_container .video {
+    width: 312px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#section03 .video_container .video video {
+    width: 100%;
+}
+
+
+/** Scene04 **/
+#section04 {
+    width: 1920px;
+}
+
+#section04 .des {
+    position: absolute;
+    left: 90px;
+    top: 420px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section04.on .des {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+/** Scene05 **/
+#section05 {
+    width: 1920px;
+}
+
+#section05 .video_container {
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    left: 390px;
+    top: 130px;
+}
+
+#section05 .video_container .frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#section05 .video_container .video {
+    width: 312px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#section05 .video_container .video video {
+    width: 100%;
+}
+
+
+/** Scene06 **/
+#section06 {
+    width: 1920px;
+    background: #eaeaea;
+}
+
+#section06 .video_container {
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    left: 224px;
+    top: 122px;
+}
+
+#section06 .video_container .frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#section06 .video_container .video {
+    width: 313px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#section06 .video_container .video video {
+    width: 100%;
+}
+
+
+/** Scene07 **/
+#section07 {
+    width: 1920px;
+}
+
+#section07 .video_container {
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    left: 180px;
+    top: 125px;
+}
+
+#section07 .video_container .frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#section07 .video_container .video {
+    width: 313px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#section07 .video_container .video video {
+    width: 100%;
+}
+
+
+/** Scene08 **/
+#section08 {
+    width: 1920px;
+    background: #eaeaea;
+}
+
+#section08 .video_container {
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    left: 510px;
+    top: 145px;
+}
+
+
+#section08 .video_container .frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#section08 .video_container .video {
+    width: 312px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#section08 .video_container .video video {
+    width: 100%;
+}
+
+
+/** Scene09 **/
+#section09 {
+    width: 1920px;
+}
+
+#section09 .video_container {
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    left: 340px;
+    top: 133px;
+}
+
+#section09 .video_container .frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#section09 .video_container .video {
+    width: 313px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#section09 .video_container .video video {
+    width: 100%;
+}
+
+
+/** Scene10 **/
+#section10 {
+    width: 1920px;
+}
+
+
+
+
+
+

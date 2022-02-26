@@ -1,0 +1,228 @@
+
+.slick-slide {
+    outline: none;
+}
+
+
+#mega {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 1);
+    /*display: none;*/
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+#mega.on {
+    transform: translateX(0);
+}
+
+#mega > .left {
+    position: absolute;
+    left: 240px;
+    top: 140px;
+    width: 500px;
+    height: 720px;
+}
+
+#mega .left .menu {
+    margin-bottom: 45px;
+    opacity: 0.3;
+    position: relative;
+}
+
+#mega .left .menu > div {
+    display: inline-block;
+    transition: all .5s;
+    position: relative;
+}
+
+
+#mega .left .menu > div:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 1s
+}
+
+
+#mega .left .menu > div:hover:after {
+    width: 110%;
+}
+
+#mega .left > div:hover {
+    opacity: 1;
+}
+
+#mega .right {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    width: 500px;
+    height: 720px;
+}
+
+#mega .right > .etc1 {
+    position: absolute;
+    right: 570px;
+    top: 280px;
+}
+
+#mega .right > .etc2 {
+    position: absolute;
+    right: 284px;
+    bottom: -60px;
+}
+
+#mega > div{
+    cursor: pointer;
+}
+
+
+
+#header {
+    width: 88px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999999;
+
+}
+
+#header > .open {
+    width: 78px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#header > .open .inner {
+    width: 35px;
+    height: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#header > .open .inner > div {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transition: all 1s;
+}
+
+#header > .open .inner > div:nth-child(1) {
+    transform-origin: left top;
+}
+
+#header > .open .inner > div:nth-child(2) {
+    transform-origin: right bottom;
+}
+
+#header > .open.on .inner > div:nth-child(1) {
+    transform: rotate(-45deg) translateY(13px);
+}
+
+#header > .open.on .inner > div:nth-child(2) {
+    transform: rotate(45deg) translateY(2px);
+}
+
+
+#header > .bottom {
+    width: 36px;
+    height: 132px;
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+}
+
+
+#container .main {
+    width: 7980px; /* 컨텐츠 박스 5개 X 1920(가로사이즈) */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#section01 {
+    width: 1920px;
+}
+
+
+#section01 .main1 {
+    position: absolute;
+    left: 88px;
+    top: 0;
+}
+
+#section01 .right {
+    width: 565px;
+    height: 441px;
+    position: absolute;
+    right: 100px;
+    top: 250px;
+}
+
+
+#section01 .right > .main3 {
+    position: absolute;
+    right: 460px;
+    top: 390px;
+    animation: arrow 1s infinite alternate;
+}
+
+@keyframes arrow {
+
+    to {
+        transform: translateX(20px);
+    }
+}
+
+#section02 {
+    width: 5135px;
+}
+
+#section02 > div {
+    position: absolute;
+    left: 0;
+    top: 140px;
+}
+
+#section03 {
+    width: 925px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

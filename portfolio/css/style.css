@@ -1,0 +1,395 @@
+
+#section01 {
+    height: 1080px;
+    position: relative;
+    background: #fff;
+}
+
+#section01 .box {
+    width: 902px;
+    height: 514px;
+    position: absolute;
+    left: 173px;
+    top: 132px;
+}
+
+#section01 .box > .year {
+    margin-bottom: 20px;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section01.on .box > .year {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .box > .title {
+    margin-bottom: 40px;
+}
+
+#section01 .box > .title > .title1 {
+    position: absolute;
+    right: 140px;
+    top: 49px;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section01.on .box > .title > .title1 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section01 .box > .title > .title2 {
+    position: absolute;
+    left: 160px;
+    top: 158px;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 1s 0.5s;
+}
+
+#section01.on .box > .title > .title2 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section01 .box > .title > .title3 {
+    position: absolute;
+    right: -7px;
+    bottom: 131px;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section01.on .box > .title > .title3 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .box > .daun {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s 2s;
+}
+
+#section01.on .box > .daun {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section02 {
+    height: 1080px;
+    background: #fff;
+}
+
+#section02 .box {
+    width: 692px;
+    height: 85px;
+    position: absolute;
+    left: 180px;
+    top: 90px;
+}
+
+#section02 .box .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section02.on .box .title {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section02 .box .title1 {
+    position: absolute;
+    left: 335px;
+    top: -10px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section02.on .box .title1 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section02 .intro {
+    width: 482px;
+    height: 268px;
+    position: absolute;
+    left: 640px;
+    bottom: 280px;
+}
+
+#section02 .intro .des1 {
+    margin-bottom: 9px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section02.on .intro .des1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section02 .intro .des2 {
+    margin-bottom: 5px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section02.on .intro .des2 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section02 .intro .des3 {
+    margin-bottom: 5px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s 2s;
+}
+
+#section02.on .intro .des3 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section03 {
+    height: 980px;
+}
+
+#section03 .box1 {
+    width: 353px;
+    height: 535px;
+    position: absolute;
+    left: 107px;
+    bottom: 130px;
+}
+
+#section03 .box1 > .boxes{
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s 0.5s;
+}
+
+#section03.on .box1 > .boxes{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section03 .box1 .web {
+    margin-bottom: 12px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section03.on .box1 .web {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section03 .box1 .web1 {
+    margin-bottom: 18px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+#section03 .box1 .web2 {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#section03 .box1 .web3 {
+    cursor: pointer;
+}
+
+#section03 .box2 {
+    width: 353px;
+    height: 535px;
+    position: absolute;
+    left: 567px;
+    bottom: 50px;
+}
+
+
+#section03 .box2 .app {
+    margin-bottom: 12px;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section03.on .box2 .app {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section03 .box2 .app1 {
+    margin-bottom: 10px;
+    margin-left: 3px;
+    cursor: pointer;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s 0.5s;
+}
+
+#section03.on .box2 .app1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section03 .box3 {
+    width: 353px;
+    height: 535px;
+    position: absolute;
+    right: 541px;
+    bottom: 180px;
+}
+
+#section03 .box3 > .boxes{
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s 0.5s;
+}
+
+#section03.on .box3 > .boxes{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section03 .box3 .prom {
+    margin-bottom: 12px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section03.on .box3 .prom {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section03 .box3 .prom1 {
+    margin-bottom: 18px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+#section03 .box3 .prom2 {
+    margin-bottom: 10px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+#section03 .box4 {
+    width: 353px;
+    height: 535px;
+    position: absolute;
+    right: 80px;
+    bottom: 95px;
+}
+
+#section03 .box4 .ad {
+    margin-bottom: 12px;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section03.on .box4 .ad {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section03 .box4 .ad1 {
+    cursor: pointer;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s 0.5s;
+}
+
+#section03.on .box4 .ad1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section04 {
+    height: 980px;
+    background: #fff
+}
+
+#section04 .box {
+    width: 713px;
+    height: 509px;
+    position: absolute;
+    left: 620px;
+    top: 0;
+}
+
+#section04 .box > .end {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section04.on .box > .end {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+#section04 .box > .end1 {
+    position: absolute;
+    left: 240px;
+    bottom: -120px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s 0.5s;
+}
+
+#section04.on .box > .end1 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section04 .box > .daun {
+    position: absolute;
+    left: 170px;
+    bottom: -260px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section04.on .box > .daun {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+

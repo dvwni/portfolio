@@ -1,0 +1,976 @@
+/** Scene01 **/
+
+.slick-slide {
+    outline: none;
+}
+
+
+#mega {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999999;
+    background: rgba(0, 0, 0, 1);
+    /*display: none;*/
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+#mega.on {
+    transform: translateX(0);
+}
+
+#mega > .left {
+    position: absolute;
+    left: 240px;
+    top: 140px;
+    width: 500px;
+    height: 720px;
+}
+
+#mega .left .menu {
+    margin-bottom: 45px;
+    opacity: 0.3;
+    position: relative;
+}
+
+#mega .left .menu > div {
+    display: inline-block;
+    transition: all .5s;
+    position: relative;
+}
+
+
+#mega .left .menu > div:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 1s
+}
+
+
+#mega .left .menu > div:hover:after {
+    width: 110%;
+}
+
+#mega .left > div:hover {
+    opacity: 1;
+}
+
+#mega .right {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    width: 500px;
+    height: 720px;
+}
+
+#mega .right > .etc1 {
+    position: absolute;
+    right: 570px;
+    top: 280px;
+}
+
+#mega .right > .etc2 {
+    position: absolute;
+    right: 284px;
+    bottom: -60px;
+}
+
+#mega > div {
+    cursor: pointer;
+}
+
+
+#header {
+    width: 88px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999;
+}
+
+#header > .open {
+    width: 78px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#header > .open .inner {
+    width: 35px;
+    height: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#header > .open .inner > div {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transition: all 1s;
+}
+
+#header > .open .inner > div:nth-child(1) {
+    transform-origin: left top;
+}
+
+#header > .open .inner > div:nth-child(2) {
+    transform-origin: right bottom;
+}
+
+#header > .open.on .inner > div:nth-child(1) {
+    transform: rotate(-45deg) translateY(13px);
+}
+
+#header > .open.on .inner > div:nth-child(2) {
+    transform: rotate(45deg) translateY(2px);
+}
+
+
+#header > .bottom {
+    width: 36px;
+    height: 132px;
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+}
+
+.line {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99999999;
+}
+
+.line .bar > .filter1 {
+    position: absolute;
+    right: 407px;
+    bottom: 24px;
+    cursor: pointer;
+}
+
+.line .bar .filter1 .depth {
+    width: 185px;
+    height: 0;
+    background: #fff;
+    position: absolute;
+    left: -50px;
+    bottom: 50px;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.line .bar .filter1.on .depth {
+    height: 200px;
+}
+
+.line .bar .filter1 .depth header {
+    padding: 15px 10px 0;
+}
+
+.line .bar .filter1 .depth ul > li {
+    margin-bottom: 10px;
+}
+
+.depth .submitBtn {
+    width: 100%;
+    padding: 7px;
+    background: gray;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.depth .submitBtn:disabled {
+    background: rgba(128, 128, 128, 0.23);
+    color: #979797;
+}
+
+.line .bar .filter1 .depth article {
+    position: relative;
+    padding: 10px;
+}
+
+
+.line .bar > .filter2 {
+    position: absolute;
+    right: 223px;
+    bottom: 24px;
+    display: flex;
+    cursor: pointer;
+}
+
+.line .bar .filter2 .depth {
+    width: 185px;
+    height: 0;
+    background: #fff;
+    position: absolute;
+    left: -50px;
+    bottom: 50px;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+
+.line .bar .filter2.on .depth {
+    height: 200px;
+}
+
+
+.line .bar .filter2 .depth header {
+    padding: 15px 10px 0;
+}
+
+.line .bar .filter2 .depth ul {
+    width: 175px;
+    height: 82px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 5px;
+
+}
+
+.line .bar .filter2 .depth ul > li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-basis: 20%;
+}
+
+.filter2 li input {
+    display: none;
+}
+
+.filter2 label {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.filter2 li:nth-child(1) label {
+    background: #ece8e8;
+}
+
+.filter2 li:nth-child(2) label {
+    background: #242222;
+}
+
+.filter2 li:nth-child(3) label {
+    background: #b17a5e;
+}
+
+.filter2 li:nth-child(4) label {
+    background: #d8d8d8;
+}
+
+.filter2 li:nth-child(5) label {
+    background: #8c8c8c;
+}
+
+.filter2 li:nth-child(6) label {
+    background: #ff2929;
+}
+
+.filter2 li:nth-child(7) label {
+    background: #ff8041;
+}
+
+.filter2 li:nth-child(8) label {
+    background: #93cef4;
+}
+
+.filter2 li:nth-child(9) label {
+    background: #985a96;
+}
+
+.filter2 li:nth-child(10) label {
+    background: #2a4e8a;
+}
+
+.filter2 li:nth-child(11) label {
+    background: #ebd5c3;
+}
+
+.filter2 li:nth-child(12) label {
+    background: #f4c6c6;
+}
+
+.filter2 li:nth-child(13) label {
+    background: #feed9e;
+}
+
+.filter2 li:nth-child(14) label {
+    background: #66c995;
+}
+
+.filter2 li:nth-child(15) label {
+    background: #879b58;
+}
+
+
+.filter2 input:checked ~ label {
+    border: 1px solid black;
+}
+
+
+.depth .submitBtn {
+    width: 100%;
+    padding: 7px;
+    background: gray;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.depth .submitBtn:disabled {
+    background: rgba(128, 128, 128, 0.23);
+    color: #979797;
+}
+
+.line .bar .filter2 .depth article {
+    position: relative;
+    padding: 10px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+
+.line .bar > .filter3 {
+    position: absolute;
+    right: 37px;
+    bottom: 24px;
+    cursor: pointer;
+}
+
+.line .bar .filter3 .depth {
+    width: 183px;
+    height: 0;
+    background: #fff;
+    position: absolute;
+    left: -52px;
+    bottom: 50px;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.line .bar .filter3.on .depth {
+    height: 200px;
+}
+
+.line .bar .filter3 .depth header {
+    padding: 15px 10px 0;
+}
+
+.line .bar .filter3 .depth ul {
+    width: 175px;
+    height: 82px;
+    margin-bottom: 5px;
+
+}
+
+.line .bar .filter3 .depth ul > li {
+    margin-bottom: 12px;
+    flex-basis: 20%;
+}
+
+
+.depth .submitBtn1 {
+    width: 93%;
+    padding: 7px;
+    background: gray;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.depth .submitBtn:disabled {
+    background: rgba(128, 128, 128, 0.23);
+    color: #979797;
+}
+
+.line .bar .filter3 .depth article {
+    position: relative;
+    padding: 10px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+
+#container .main {
+    width: 17352px; /* ������ �ڽ� 5�� X 1920(���λ�����) */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#section01 {
+    width: 1920px;
+}
+
+#section01 .main1 {
+    position: absolute;
+    left: 88px;
+    top: 0;
+}
+
+#section01 .right {
+    position: absolute;
+    right: 110px;
+    top: 330px;
+    width: 708px;
+    height: 298px;
+}
+
+
+#section01 .right > .main3 {
+    position: absolute;
+    right: 0;
+    top: 133px;
+    animation: arrow 1s infinite alternate;
+}
+
+@keyframes arrow {
+
+    to {
+        transform: translateX(20px);
+    }
+}
+
+
+/** Scene02 **/
+#section02 {
+    display: flex;
+    width: 1944px;
+    align-items: center;
+}
+
+#section02 .title {
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    transform: translate(50%, 50%);
+}
+
+#section02 .boxes {
+    width: 1920px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+
+}
+
+#section02 .box {
+    width: 622px;
+    height: 407px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#section02 .box > .mars2 {
+    position: absolute;
+    left: 170px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section02 .box > .mars21 {
+    position: absolute;
+    left: 170px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+
+#section02 .box > .mars22 {
+    position: absolute;
+    left: 200px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+
+/** Scene03 **/
+#section03 {
+    width: 1944px;
+    display: flex;
+    align-items: center;
+}
+
+
+#section03 .boxes {
+    width: 1944px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+    margin-left: 28px;
+
+}
+
+#section03 .box {
+    width: 622px;
+    height: 407px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#section03 .box > .mars2 {
+    position: absolute;
+    left: 153px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section03 .box > .mars21 {
+    position: absolute;
+    left: 160px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section03 .box > .mars22 {
+    position: absolute;
+    left: 170px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+
+/** Scene04 **/
+#section04 {
+    width: 946px;
+    display: flex;
+    align-items: center;
+}
+
+#section04 .boxes {
+    width: 946px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+    margin-left: 25px;
+    position: relative;
+
+}
+
+#section04 .box {
+    width: 622px;
+    height: 407px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+#section04 .box > .mars2 {
+    position: absolute;
+    left: 125px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+}
+
+
+#section04 .boxes > .plus {
+    position: absolute;
+    right: 180px;
+    top: 145px;
+    cursor: pointer;
+
+}
+
+
+/** Scene05 **/
+#section05 {
+    width: 1948px;
+    display: flex;
+    align-items: center;
+}
+
+#section05 .title {
+    position: absolute;
+    left: 460px;
+    top: 100px;
+    transform: translate(50%, 50%);
+}
+
+#section05 .boxes {
+    width: 1948px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+    margin-left: 28px;
+}
+
+#section05 .box {
+    width: 622px;
+    height: 407px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+
+
+#section05 .box > .metal2 {
+    position: absolute;
+    left: 210px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section05 .box > .metal21 {
+    position: absolute;
+    left: 102px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section05 .box > .metal22 {
+    position: absolute;
+    left: -110px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+
+#section06 {
+    width: 1944px;
+    display: flex;
+    align-items: center;
+}
+
+#section06 .boxes {
+    width: 1944px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+    margin-left: 28px;
+
+}
+
+#section06 .box {
+    width: 622px;
+    height: 407px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#section06 .box > .metal2 {
+    position: absolute;
+    left: 190px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section06 .box > .metal21 {
+    position: absolute;
+    left: 190px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section06 .box > .metal22 {
+    position: absolute;
+    left: 130px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+
+#section07 {
+    width: 946px;
+    display: flex;
+    align-items: center;
+}
+
+#section07 .boxes {
+    width: 946px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+    margin-left: 25px;
+    position: relative;
+
+}
+
+#section07 .box {
+    width: 622px;
+    height: 407px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+#section07 .box > .metal2 {
+    position: absolute;
+    left: 153px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+}
+
+
+#section07 .boxes > .plus {
+    position: absolute;
+    right: 180px;
+    top: 145px;
+    cursor: pointer;
+
+}
+
+
+#section08 {
+    width: 1946px;
+    display: flex;
+    align-items: center;
+}
+
+
+#section08 .title {
+    position: absolute;
+    left: 470px;
+    top: 100px;
+    transform: translate(50%, 50%);
+}
+
+#section08 .boxes {
+    width: 1946px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+    margin-left: 28px;
+}
+
+#section08 .box {
+    width: 622px;
+    height: 407px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+
+
+#section08 .box > .asetate2 {
+    position: absolute;
+    left: 120px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section08 .box > .asetate21 {
+    position: absolute;
+    left: 2px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section08 .box > .asetate22 {
+    position: absolute;
+    left: -88px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+
+#section09 {
+    width: 1944px;
+    display: flex;
+    align-items: center;
+}
+
+#section09 .boxes {
+    width: 1944px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+    margin-left: 28px;
+
+}
+
+#section09 .box {
+    width: 622px;
+    height: 407px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#section09 .box > .asetate2 {
+    position: absolute;
+    left: 66px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section09 .box > .asetate21 {
+    position: absolute;
+    left: 118px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+#section09 .box > .asetate22 {
+    position: absolute;
+    left: 193px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+
+}
+
+
+#section10 {
+    width: 946px;
+    display: flex;
+    align-items: center;
+}
+
+
+#section10 .boxes {
+    width: 946px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -160px;
+    margin-left: 25px;
+    position: relative;
+
+}
+
+#section10 .box {
+    width: 622px;
+    height: 407px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+#section10 .box > .asetate2 {
+    position: absolute;
+    left: 125px;
+    bottom: 35px;
+    transform: translate(50%, 50%);
+}
+
+
+#section10 .boxes > .plus {
+    position: absolute;
+    right: 180px;
+    top: 145px;
+    cursor: pointer;
+
+}
+
+#section11 {
+    width: 924px;
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
